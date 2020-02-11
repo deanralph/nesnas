@@ -8,4 +8,4 @@ def checkSmart()
   pass
 
 def noOfDisks()
-  pass
+  return 4

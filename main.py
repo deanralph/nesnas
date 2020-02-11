@@ -7,11 +7,13 @@
 
 #Imports
 from flask import Flask, render_template, request
+import drive
 
 #Main App
 app = Flask(__name__)
 
 login = False
+noOfDrives = drive.noOfDisks()
 
 @app.route('/', methods = ['POST', 'GET'])
 def index():
