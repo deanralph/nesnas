@@ -6,3 +6,6 @@ def getDrives()
   
 def checkSmart()
   pass
+
+def noOfDisks()
+  pass

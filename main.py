@@ -11,9 +11,15 @@ from flask import Flask, render_template, request
 #Main App
 app = Flask(__name__)
 
-@app.route('/')
+login = False
+
+@app.route('/', methods = ['POST', 'GET'])
 def index():
-    return render_template("index.html")
+    if request.method == 'GET':
+        if login:
+            return render_template("index.html")
+        else:
+            return render_template("login.html")
 
 # @app.route('/settings', methods = ['POST', 'GET'])
 # def dbsettings():
