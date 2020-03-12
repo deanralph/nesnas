@@ -10,4 +10,4 @@ def checkSmart()
   return "Pass"
 
 def noOfDisks()
-  return 4
+  return len(arrDrives)
